@@ -1,30 +1,25 @@
 import React from 'react';
-import {CartWidget} from './CartWidget';
-import '../NavBar/NavBar.css';
-
+import { CartWidget } from './CartWidget';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const NavBar = () => {
-
     return (
-        <header>
-            <nav>
-            <div>
-                <li className="navLi"><h1><img className="logo" src="images/header-logo.png" alt="logo sheridan"/></h1></li>
-            </div>
-            <div>
-                <li className="navLi">Escolar</li>
-            </div>
-            <div>
-                <li className="navLi">Artística</li>
-            </div>
-            <div>
-                <li className="navLi">Técnica</li>
-            </div>
-            <div>
-                <li className="navLi">Gráfica</li>
-            </div>
-                <li><CartWidget/></li>
-            </nav>
-        </header>
-    )
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Container fluid>
+            <Navbar.Brand href="#home"><img className="logo" src="images/header-logo.png" alt="logo sheridan"/></Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="me-auto">
+                    <Nav.Link href="#home">Escolar</Nav.Link>
+                    <Nav.Link href="#link">Artística</Nav.Link>
+                    <Nav.Link href="#link">Técnica</Nav.Link>
+                    <Nav.Link href="#link">Gráfica</Nav.Link>
+                </Nav>
+                <Nav>
+                    <Nav.Link href="#link" className="d-flex"><CartWidget/></Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+        </Container>
+    </Navbar>)
 }

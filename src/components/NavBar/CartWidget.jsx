@@ -1,9 +1,10 @@
 import React from 'react'
+import { FaShoppingCart } from 'react-icons/fa'
 
 export const CartWidget = () => {
     return (
         <div>
-            <img src="images/cart.png" alt="shopping-cart"/>
+            <FaShoppingCart size="2em"/>
         </div>
     )
 }
