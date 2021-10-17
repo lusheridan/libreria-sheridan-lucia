@@ -1,0 +1,26 @@
+.link {
+    color: rgb(254, 212, 0);
+    font-weight: 500;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 80px;
+}
+
+.cart {
+    color: rgb(254, 212, 0);
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 80px;
+}
+.cart:hover {
+    color: white;
+}
+
+.activeLink {
+   color: white;
+}
+
+.link:hover {
+    color: white;
+}
