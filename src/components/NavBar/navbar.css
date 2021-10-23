@@ -3,16 +3,15 @@
     font-weight: 500;
     font-size: 40px;
     text-decoration: none;
-    padding: 80px;
 }
 
 .cart {
     color: rgb(254, 212, 0);
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
-    padding: 80px;
 }
+
 .cart:hover {
     color: white;
 }
