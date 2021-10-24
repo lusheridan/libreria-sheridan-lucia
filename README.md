@@ -6,11 +6,24 @@
 - En el menú de navegación se incluye la categoría `Contacto` que a futuro incluirá un formulario de contacto para consultas y/o sugerencias.
 - Proximamente contará con los botones necesarios para agregar al carrito, seleccionar cantidad de unidads y/o concretar la compra.
 
-## Dependencias adicionales
+![Librería Sheridan](./libreria-sheridan.gif)
+
+## Dependencias
+
+### react
+
+- El proyecto es realizado con `react-create-app`.
 
 ### react-bootstrap
+
 - Se elige react-bootstrap como librería de estilos para mejorar y facilitar la interfaz gráfica. Además permite que la aplicación sea responsiva sin tener que agregar mas lineas de código a las hojas de estilo.
+
+### node
+
+- Se utiliza node version `14.18.0`.
 
 ## Run Project
 
-En el root del proyecto ejecutar `npm start`.
+En el root del proyecto ejecutar:
+- `npm install`.
+- `npm start`.

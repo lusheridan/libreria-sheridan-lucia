@@ -4,7 +4,7 @@ import { CartContext } from "../../context/CartContex";
 import { ItemCount } from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 
-export const ItemDetails = ({ id, name, price, img, description }) => {
+export const ItemDetails = ({ id, name, price, img, description, stock }) => {
   const [count, setCount] = useState(0);
   const { addToCart, isInCart, removeItem } = useContext(CartContext);
   const product = { id, name, price, img, description };
@@ -37,7 +37,7 @@ export const ItemDetails = ({ id, name, price, img, description }) => {
         ) : (
           <>
             <h4>Cantidad: {count}</h4>
-            <ItemCount count={count} modify={setCount} max={5} />
+            <ItemCount count={count} modify={setCount} max={stock} />
             <br />
             <span>
               <Button variant="dark" onClick={addItem}>

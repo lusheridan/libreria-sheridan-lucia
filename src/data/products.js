@@ -6,6 +6,7 @@ export const products = [
     price: 300,
     img: "images/products/1.png",
     category: "artistica",
+    stock: 23,
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const products = [
     price: 200,
     img: "images/products/2.png",
     category: "escolar",
+    stock: 14,
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const products = [
     price: 250,
     img: "images/products/3.png",
     category: "escolar",
+    stock: 10,
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const products = [
     price: 100,
     img: "images/products/4.png",
     category: "escolar",
+    stock: 33,
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const products = [
     price: 600,
     img: "images/products/5.png",
     category: "escolar",
+    stock: 16,
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ export const products = [
     price: 350,
     img: "images/products/6.png",
     category: "escolar",
+    stock: 25,
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ export const products = [
     price: 70,
     img: "images/products/7.png",
     category: "escolar",
+    stock: 35,
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ export const products = [
     price: 350,
     img: "images/products/8.png",
     category: "escolar",
+    stock: 57,
   },
   {
     id: 9,
@@ -70,6 +78,7 @@ export const products = [
     price: 500,
     img: "images/products/9.png",
     category: "escolar",
+    stock: 15,
   },
   {
     id: 10,
@@ -78,6 +87,7 @@ export const products = [
     price: 150,
     img: "images/products/10.png",
     category: "escolar",
+    stock: 45,
   },
   {
     id: 11,
@@ -86,6 +96,7 @@ export const products = [
     price: 70,
     img: "images/products/11.png",
     category: "escolar",
+    stock: 25,
   },
   {
     id: 12,
@@ -94,6 +105,7 @@ export const products = [
     price: 650,
     img: "images/products/12.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 13,
@@ -102,6 +114,7 @@ export const products = [
     price: 150,
     img: "images/products/13.png",
     category: "artistica",
+    stock: 15,
   },
   {
     id: 14,
@@ -110,6 +123,7 @@ export const products = [
     price: 50,
     img: "images/products/14.png",
     category: "escolar",
+    stock: 35,
   },
   {
     id: 15,
@@ -118,6 +132,7 @@ export const products = [
     price: 250,
     img: "images/products/15.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 16,
@@ -126,6 +141,7 @@ export const products = [
     price: 170,
     img: "images/products/16.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 17,
@@ -134,6 +150,7 @@ export const products = [
     price: 50,
     img: "images/products/17.png",
     category: "escolar",
+    stock: 105,
   },
   {
     id: 18,
@@ -143,6 +160,7 @@ export const products = [
     price: 450,
     img: "images/products/18.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 19,
@@ -151,6 +169,7 @@ export const products = [
     price: 150,
     img: "images/products/19.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 20,
@@ -159,6 +178,7 @@ export const products = [
     price: 150,
     img: "images/products/20.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 21,
@@ -167,6 +187,7 @@ export const products = [
     price: 150,
     img: "images/products/21.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 22,
@@ -175,6 +196,7 @@ export const products = [
     price: 250,
     img: "images/products/22.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 23,
@@ -184,6 +206,7 @@ export const products = [
     price: 270,
     img: "images/products/23.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 24,
@@ -192,6 +215,7 @@ export const products = [
     price: 550,
     img: "images/products/24.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 25,
@@ -200,6 +224,7 @@ export const products = [
     price: 350,
     img: "images/products/25.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 26,
@@ -208,6 +233,7 @@ export const products = [
     price: 165,
     img: "images/products/26.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 27,
@@ -216,6 +242,7 @@ export const products = [
     price: 1350,
     img: "images/products/27.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 28,
@@ -224,6 +251,7 @@ export const products = [
     price: 150,
     img: "images/products/28.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 29,
@@ -232,6 +260,7 @@ export const products = [
     price: 200,
     img: "images/products/29.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 30,
@@ -240,6 +269,7 @@ export const products = [
     price: 750,
     img: "images/products/30.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 31,
@@ -248,6 +278,7 @@ export const products = [
     price: 550,
     img: "images/products/35.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 32,
@@ -256,6 +287,7 @@ export const products = [
     price: 300,
     img: "images/products/32.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 33,
@@ -264,6 +296,7 @@ export const products = [
     price: 1400,
     img: "images/products/33.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 34,
@@ -272,6 +305,7 @@ export const products = [
     price: 150,
     img: "images/products/34.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 35,
@@ -281,6 +315,7 @@ export const products = [
     price: 2850,
     img: "images/products/35.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 36,
@@ -289,6 +324,7 @@ export const products = [
     price: 150,
     img: "images/products/36.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 37,
@@ -297,6 +333,7 @@ export const products = [
     price: 340,
     img: "images/products/37.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 38,
@@ -305,6 +342,7 @@ export const products = [
     price: 3700,
     img: "images/products/38.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 39,
@@ -313,6 +351,7 @@ export const products = [
     price: 2350,
     img: "images/products/39.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 40,
@@ -321,6 +360,7 @@ export const products = [
     price: 550,
     img: "images/products/40.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 41,
@@ -329,6 +369,7 @@ export const products = [
     price: 160,
     img: "images/products/10.png",
     category: "artistica",
+    stock: 5,
   },
   {
     id: 42,
@@ -337,6 +378,7 @@ export const products = [
     price: 350,
     img: "images/products/42.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 43,
@@ -345,6 +387,7 @@ export const products = [
     price: 200,
     img: "images/products/43.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 44,
@@ -353,6 +396,7 @@ export const products = [
     price: 300,
     img: "images/products/43.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 45,
@@ -361,6 +405,7 @@ export const products = [
     price: 270,
     img: "images/products/45.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 46,
@@ -369,6 +414,7 @@ export const products = [
     price: 450,
     img: "images/products/46.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 47,
@@ -377,6 +423,7 @@ export const products = [
     price: 170,
     img: "images/products/47.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 48,
@@ -385,6 +432,7 @@ export const products = [
     price: 150,
     img: "images/products/48.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 49,
@@ -393,6 +441,7 @@ export const products = [
     price: 150,
     img: "images/products/49.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 50,
@@ -401,6 +450,7 @@ export const products = [
     price: 100,
     img: "images/products/50.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 51,
@@ -409,6 +459,7 @@ export const products = [
     price: 350,
     img: "images/products/51.png",
     category: "escolar",
+    stock: 5,
   },
   {
     id: 52,
@@ -417,5 +468,6 @@ export const products = [
     price: 550,
     img: "images/products/52.png",
     category: "escolar",
+    stock: 5,
   },
 ];
