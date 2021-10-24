@@ -1,25 +1,25 @@
 .link {
-    color: rgb(254, 212, 0);
-    font-weight: 500;
-    font-size: 40px;
-    text-decoration: none;
+  color: rgb(254, 212, 0);
+  font-weight: 500;
+  font-size: 40px;
+  text-decoration: none;
 }
 
 .cart {
-    color: rgb(254, 212, 0);
-    font-weight: 500;
-    font-size: 25px;
-    text-decoration: none;
+  color: rgb(254, 212, 0);
+  font-weight: 500;
+  font-size: 25px;
+  text-decoration: none;
 }
 
 .cart:hover {
-    color: white;
+  color: white;
 }
 
 .activeLink {
-   color: white;
+  color: white;
 }
 
 .link:hover {
-    color: white;
+  color: white;
 }
