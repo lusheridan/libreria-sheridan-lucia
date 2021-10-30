@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ItemList } from "../../components/ItemList/ItemList";
-import { getProducts } from "../../helpers/getProducts";
+import { getFirestore } from "../../firebase/config";
 import { Spinner } from "react-bootstrap";
 import "./ItemListContainer.css";
 import { useParams } from "react-router";
@@ -13,22 +13,25 @@ export const ItemListContainer = () => {
   useEffect(() => {
     setLoading(true);
 
-    getProducts()
-      .then((res) => {
-        console.log(categoryId);
-        if (categoryId) {
-          setProducts(
-            res.filter((products) => products.category === categoryId)
-          );
-        } else {
-          setProducts(res);
-        }
+    const db = getFirestore();
+    const productos = categoryId
+      ? db.collection("products").where("category", "==", categoryId)
+      : db.collection("products");
+
+    productos
+      .get()
+      .then((response) => {
+        const newItems = response.docs.map((doc) => {
+          return { id: doc.id, ...doc.data() };
+        });
+
+        setProducts(newItems);
       })
       .catch((err) => console.log(err))
       .finally(() => {
         setLoading(false);
       });
-  }, [categoryId]);
+  }, [categoryId, setLoading]);
 
   return (
     <div>

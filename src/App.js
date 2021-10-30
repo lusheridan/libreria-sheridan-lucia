@@ -4,6 +4,7 @@ import { ItemDetailContainer } from "./containers/ItemDetailContainer/ItemDetail
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import { CartProvider } from "./context/CartContex";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Cart } from "./components/Cart/Cart";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
               <h1>Contacto</h1>
             </Route>
             <Route exact path="/cart">
-              <h1>Cart</h1>
+              <Cart />
             </Route>
             <Route path="*">
               <Redirect to="/" />
