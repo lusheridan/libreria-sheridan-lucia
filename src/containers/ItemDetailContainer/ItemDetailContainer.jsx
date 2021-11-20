@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { ItemDetails } from "../../components/ItemDetail/ItemDetail";
-import { Spinner } from "react-bootstrap";
+import { Alert, Spinner, Container } from "react-bootstrap";
 import { getFirestore } from "../../firebase/config";
 
 export const ItemDetailContainer = () => {
@@ -31,14 +31,16 @@ export const ItemDetailContainer = () => {
   }, [productId]);
 
   return (
-    <div>
+    <Container>
       {loading ? (
         <div className="d-flex justify-content-center">
           <Spinner animation="border" role="status"></Spinner>
         </div>
-      ) : (
+      ) : products.name ? (
         <ItemDetails {...products} />
+      ) : (
+        <Alert variant="warning">El producto no existe</Alert>
       )}
-    </div>
+    </Container>
   );
 };

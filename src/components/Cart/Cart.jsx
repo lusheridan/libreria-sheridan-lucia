@@ -4,7 +4,7 @@ import { CartContext } from "../../context/CartContex";
 import { Link } from "react-router-dom";
 import { FaTrashAlt } from "react-icons/fa";
 
-export const Cart = () => {
+export const Cart = ({ isCheckout = false }) => {
   const { cart, removeItem, totalAmount, clear } = useContext(CartContext);
   const renderProduct = (element, index) => {
     return (
@@ -26,7 +26,7 @@ export const Cart = () => {
     <>
       {cart.length > 0 ? (
         <Container>
-          <h2>Resumen de compra</h2>
+          <h2> {isCheckout ? "Checkout" : "Resumen de compra"} </h2>
           <Table striped bordered hover size="sm">
             <thead>
               <tr>
@@ -46,12 +46,16 @@ export const Cart = () => {
             Vaciar Carrito
           </button>
 
-          <Link to="/checkout" className="btn btn-success mx-3">
-            Terminar mi compra
-          </Link>
+          {!isCheckout && (
+            <Link to="/checkout" className="btn btn-success mx-3">
+              Terminar mi compra
+            </Link>
+          )}
         </Container>
       ) : (
-        <Alert variant="warning">No se encontraron productos</Alert>
+        !isCheckout && (
+          <Alert variant="warning">No se encontraron productos</Alert>
+        )
       )}
       <Container>
         <Link to={"/"}>

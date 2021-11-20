@@ -40,7 +40,7 @@ export const ItemDetails = ({ id, name, price, img, description, stock }) => {
             <ItemCount count={count} modify={setCount} max={stock} />
             <br />
             <span>
-              <Button variant="dark" onClick={addItem}>
+              <Button variant="dark" onClick={addItem} disabled={count === 0}>
                 Comprar
               </Button>{" "}
               <Link to={"/"}>
